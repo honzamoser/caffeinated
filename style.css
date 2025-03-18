@@ -1,0 +1,48 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #5C4E4E;
+    color: #D1D0D0;
+
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+span {
+    background-color: transparent;
+    box-shadow: none;
+    border: 2px solid #D1D0D0;
+    border-radius: 5px;
+    color: #D1D0D0;
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding: 2px;
+}
+
+span:focus {
+    outline: none;
+}
+
+button {
+    background-color: #D1D0D0;
+    border: none;
+    border-radius: 5px;
+    color: #5C4E4E;
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #988686;
+    color: #D1D0D0;
+}

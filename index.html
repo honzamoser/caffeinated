@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Caffeine Intake Tracker</title>
+
+    <script src="index.js" defer></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+
+    <meta name="darkreader-lock">
+</head>
+
+<body style="display: flex; justify-content: center; align-items: center;">
+    <div style="padding: 2em; border: solid 3px #D1D0D0; border-radius: 10px; text-align: center; display: flex; flex-direction: column; width: 360px;">
+        <h1>Caffeine Intake Tracker</h1>
+
+        <h3>I had</h3>
+
+        <div>
+            <span contenteditable="true" id="caffeineIntake" style="min-width: 2em; display: inline-block;"> </span>
+            <label for="caffeineIntake">mg</label>
+        </div>
+
+        <h3>of caffeine about</h3>
+
+        <div>
+            <span contenteditable="true" id="caffeineTime" style="min-width: 2em; display: inline-block;"> </span>
+            <label for="caffeineTime">hrs</label>
+        </div>
+
+        <h3>ago</h3>
+
+        <button onclick="run()">How caffienated am I?</button>
+
+        <br>
+
+        <div id="output" style="max-width: 360px"></div>
+    </div>
+</body>
+
+</html>
