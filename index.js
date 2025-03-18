@@ -11,6 +11,12 @@ function run() {
     const caffeineIntake = document.getElementById('caffeineIntake').textContent;
     const caffeineTime = document.getElementById('caffeineTime').textContent;
 
+    if (caffeineIntake > 1500) {
+        const html = `<p>You are dead. </p>`
+        document.getElementById('output').innerHTML = html;
+        return
+    }
+
     const currentCaffeineContent = calculateCaffeineContent(caffeineIntake, 5, caffeineTime);
     const negligibleCaffeineContent = calculateNegligibleCaffeineContent(currentCaffeineContent, 5);
 
